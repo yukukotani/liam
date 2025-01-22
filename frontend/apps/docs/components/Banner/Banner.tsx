@@ -53,7 +53,7 @@ export const Banner: FC<Props> = ({
   })
 
   const textStyle = tv({
-    base: 'text-sm font-mono font-medium',
+    base: 'text-xs font-mono',
     variants: {
       variant: {
         light: 'text-base-black',
@@ -110,13 +110,13 @@ export const Banner: FC<Props> = ({
             .with('light', () => <JackAnimationForLight />)
             .with('dark', () => <JackAnimationForDark />)
             .exhaustive()}
-          <p className={textStyle({ variant })}>
+          <p className={textStyle({ variant })} style={{fontSize: "0.625rem"}}>
             <span>{'< '}</span>
             {children}
           </p>
         </div>
         <Link href={link} className={linkStyle({ variant })}>
-          Learn More
+          <span style={{fontSize: "0.625rem"}}>Learn More</span>
         </Link>
       </div>
       {id && (
