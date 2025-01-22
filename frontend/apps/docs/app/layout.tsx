@@ -25,6 +25,9 @@ export default function Layout({ children }: { children: ReactNode }) {
             link="https://liambx.com/blog/liam-erd-introduction"
           >
             {"We're launched Liam ERD!"}
+            {"We're launched Liam ERD!"}
+            {"We're launched Liam ERD!"}
+            {"We're launched Liam ERD!"}
           </Banner>
           {children}
         </RootProvider>

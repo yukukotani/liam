@@ -16,6 +16,9 @@ const config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xxs': '0.625rem',
+      },
       colors: {
         'liam-green': {
           300: 'hsl(var(--liam-green-300))',
